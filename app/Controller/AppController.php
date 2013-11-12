@@ -34,8 +34,5 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
 	public $components = array('DebugKit.Toolbar');
-
-	public beforeFilter() {
-		$this->set('asd', 4);
-	}
+	
 }
