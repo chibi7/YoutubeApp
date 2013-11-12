@@ -1,0 +1,10 @@
+2013-11-12 10:43:16 Error: Fatal Error (4): syntax error, unexpected 'beforeFilter' (T_STRING), expecting variable (T_VARIABLE) in [/home/arek/HTML/YoutubeApp/app/Controller/AppController.php, line 38]
+2013-11-12 10:43:16 Error: [FatalErrorException] syntax error, unexpected 'beforeFilter' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /YoutubeApp/
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/arek/HTML...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/arek/HTML...', 38, Array)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/arek/HTML...', 38, Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
