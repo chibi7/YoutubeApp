@@ -5,8 +5,6 @@
  * This file is application-wide controller file. You can put all
  * application-wide controller-related methods here.
  *
- * PHP 5
- *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -34,5 +32,14 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
 	public $components = array('DebugKit.Toolbar');
-	
+
+	protected $globalCongig = null;
+
+	public function beforeFilter() {
+		$this->globalCongig = $this->loadGlobalConfig();
+	}
+
+	private function loadGlobalConfig() {
+		return parse_ini_file(APP.DS."Vendor".DS."config.ini", true);;
+	}
 }

@@ -4,8 +4,6 @@
  *
  * Use it to configure core behavior of Cake.
  *
- * PHP 5
- *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -224,12 +222,12 @@
 /**
  * A random string used in security hashing methods.
  */
-	Configure::write('Security.salt', 'DYhG93b1qyJfIxfs2guVoUubWwvniR2G0FgaC9mi');
+	Configure::write('Security.salt', 'iDYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi');
 
 /**
  * A random numeric string (digits only) used to encrypt/decrypt strings.
  */
-	Configure::write('Security.cipherSeed', '16859309657453542496749683645');
+	Configure::write('Security.cipherSeed', 'i76859309657453542496749683645');
 
 /**
  * Apply timestamps with the last modified time to static assets (js, css, images).
@@ -262,8 +260,8 @@
  * The class name and database used in CakePHP's
  * access control lists.
  */
-	// Configure::write('Acl.classname', 'DbAcl');
-	// Configure::write('Acl.database', 'default');
+	Configure::write('Acl.classname', 'DbAcl');
+	Configure::write('Acl.database', 'default');
 
 /**
  * Uncomment this line and correct your server timezone to fix
@@ -377,3 +375,8 @@ Cache::config('_cake_model_', array(
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
 ));
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+Configure::write('Redis.timeout', 0.5);
+Configure::write('Redis.conn_timeout', 0.5);
