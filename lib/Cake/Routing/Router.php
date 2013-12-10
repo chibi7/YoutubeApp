@@ -2,8 +2,6 @@
 /**
  * Parses the request URL into controller, action, and parameters.
  *
- * PHP 5
- *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -505,6 +503,12 @@ class Router {
 		), $options);
 
 		$prefix = $options['prefix'];
+		if (strpos($prefix, '/') !== 0) {
+			$prefix = '/' . $prefix;
+		}
+		if (substr($prefix, -1) !== '/') {
+			$prefix .= '/';
+		}
 
 		foreach ((array)$controller as $name) {
 			list($plugin, $name) = pluginSplit($name);

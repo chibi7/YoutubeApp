@@ -22,66 +22,37 @@ $(document).ready(function() {
 	    onRegionClick: function(element, code, region)
 	    {
 
-	    	if(isMapClicked && clickedCode != code) {
+	    	if(clickedCode != null && clickedCode != code) {
+	    		isMapClicked = true;
+	    		clickedCode = code;
+	    		bindMouseToCountry();
+	    	} else if(isMapClicked == true) {
 	    		isMapClicked = false;
-	    		$('path.jvectormap-region').trigger('click');
+	    		unbindMouseToCountry();
+	    	} else {
+	    		isMapClicked = true;
+	    		clickedCode = code;
+	    		bindMouseToCountry();
 	    	}
-	    	clickedCode = code;
-	    	// console.log(element);
-	    	// $("#map").qtip({
-		    //     content: {
-		    //         text: "asdasd"
-		    //     },
-		    //     style: { classes: 'qtip-youtube qtip-rounded qtip-shadow' },
-		    //     position: {
-			   //      target: 'mouse'
-			   //  }
-		    //  });
-	        // var message = 'You clicked "'
-	        //     + region 
-	        //     + '" which has the code: '
-	        //     + code.toUpperCase();
-	             
-	        // alert(message);
 
 	    },
 	    onRegionOver: function(event, code) {
-	    	// if(isMapClicked && code != clickedCode) {
-	    	// 	unbindMouseToCountry();
-	    	// } else if(isMapClicked && code == clickedCode) {
-	    	// 	bindMouseToCountry();
-	    	// }
 	    }
 	});
 
-	$('path.jvectormap-region').click(function(e) {
-		if(isMapClicked) {
-			isMapClicked = false;
-			return;
-		}
-		console.log('click');
-	    // var offset = $('#map').offset();
-	    // mouseX = (e.clientX - offset.left);
-	    // mouseY = (e.clientY - offset.top);
-	    // console.log(mouseX+" "+mouseY);
-	    isMapClicked = true;
-	});
+
 
 });
 
-// function bindMouseToCountry(isMapClicked) {
-// 	$('path.jvectormap-region').click(function(e) {
-// 		// if(isMapClicked) {
-// 		// 	return;
-// 		// }
-// 	    var offset = $('#map').offset();
-// 	    mouseX = (e.clientX - offset.left);
-// 	    mouseY = (e.clientY - offset.top);
-// 	    console.log(mouseX+" "+mouseY);
-// 	});
-// 	// $('path.jvectormap-region').click();
-// }
+function bindMouseToCountry() {
+	$('#map').one('mousemove', function(event) {
+		var offset = $('#map').offset();
+        mouseX = event.pageX - (offset.top) + 20;
+        mouseY = event.pageY - (offset.top) - 25;
+        console.log(mouseX+" "+mouseY);
+	});
+}
 
-// function unbindMouseToCountry() {
-// 	$('path.jvectormap-region').unbind('click');
-// }
+function unbindMouseToCountry() {
+	$('#map').unbind('mousemove');
+}

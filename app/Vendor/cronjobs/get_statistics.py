@@ -71,4 +71,4 @@ class Cron:
 
 
 if __name__ == "__main__":
-    cron = Cron("./config.ini")
+    cron = Cron("../config.ini")

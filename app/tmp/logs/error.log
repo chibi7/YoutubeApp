@@ -103,3 +103,21 @@ Request URL: /YoutubeApp/
 Stack Trace:
 #0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-12-10 01:50:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/css/qtip/jquery.qtip.css
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 01:50:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/js/qtip/jquery.qtip.js
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
