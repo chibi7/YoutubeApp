@@ -33,13 +33,17 @@ class AppController extends Controller {
 
 	public $components = array('DebugKit.Toolbar');
 
-	protected $globalCongig = null;
+	protected $globalConfig = null;
 
 	public function beforeFilter() {
-		$this->globalCongig = $this->loadGlobalConfig();
+		$this->globalConfig = $this->loadGlobalConfig();
 	}
 
 	private function loadGlobalConfig() {
-		return parse_ini_file(APP.DS."Vendor".DS."config.ini", true);;
+		$config = parse_ini_file(APP.DS."Vendor".DS."config.ini", true);
+		$config['TIME_RANGES']['time_shifts'] = explode(",", $config['TIME_RANGES']['time_shifts']);
+		$config['TIME_RANGES']['type'] = explode(",", $config['TIME_RANGES']['type']);
+
+		return $config;
 	}
 }
