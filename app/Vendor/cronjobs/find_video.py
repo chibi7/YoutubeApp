@@ -10,16 +10,9 @@ import redis
 class Cron():
     def __init__(self, config_path):
         self._options = self._parse_options()
+        self._redis = {}
         self._key = self._parse_config(config_path)
-        #self._send_request()
-        
-    def _parse_config(self, config_path):
-        config = ConfigParser()
-        config.read(config_path)
-        self._redis['host'] = config.get('REDIS', 'HOST')
-        self._redis['port'] = config.get('REDIS', 'PORT')
-        self._redis['db'] = config.get('REDIS', 'SEARCH_VIDEOS')
-        return config.get('YOUTUBE_AUTH', 'key')
+        self._send_request()
 
     def _parse_options(self):
         parser = OptionParser()
@@ -28,6 +21,14 @@ class Cron():
         parser.add_option("-k", "--key", dest="key",
                       help="save in redis with key", metavar="KEY")
         return parser.parse_args()[0]
+
+    def _parse_config(self, config_path):
+        config = ConfigParser()
+        config.read(config_path)
+        self._redis['host'] = config.get('REDIS', 'HOST')
+        self._redis['port'] = config.get('REDIS', 'PORT')
+        self._redis['db'] = config.get('REDIS', 'SEARCH_VIDEOS')
+        return config.get('YOUTUBE_AUTH', 'key')
 
     def _send_request(self):
         url = self._get_url("https://gdata.youtube.com/feeds/api/videos?alt=json")
@@ -57,7 +58,7 @@ class Cron():
         return result
 
     def _save_response(self, data):
-        redis_connection = self._get_redis_connection()
+        self.redis_connection = self._get_redis_connection()
         self.redis_connection.set("{0}".format(self._options.key), json.dumps(data))
 
     def _parse_response(self, data):
@@ -76,5 +77,4 @@ class Cron():
 
 
 if __name__ == "__main__":
-
     cron = Cron("../config.ini")
