@@ -5,6 +5,7 @@ import json
 import ast
 import sys
 import redis
+import os
 
 
 class Cron():
@@ -77,4 +78,4 @@ class Cron():
 
 
 if __name__ == "__main__":
-    cron = Cron("../config.ini")
+    cron = Cron(os.path.dirname(__file__) + "/../config.ini")
