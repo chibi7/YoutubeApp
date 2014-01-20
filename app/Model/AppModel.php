@@ -30,4 +30,18 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+
+	protected $globalConfig = null;
+
+	public function __construct() {
+		$this->globalConfig = $this->loadGlobalConfig();
+	}
+
+	private function loadGlobalConfig() {
+		$config = parse_ini_file(APP.DS."Vendor".DS."config.ini", true);
+		$config['TIME_RANGES']['time_shifts'] = explode(",", $config['TIME_RANGES']['time_shifts']);
+		$config['TIME_RANGES']['type'] = explode(",", $config['TIME_RANGES']['type']);
+
+		return $config;
+	}
 }

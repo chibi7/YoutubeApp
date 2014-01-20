@@ -121,3 +121,508 @@ Request URL: /YoutubeApp/js/qtip/jquery.qtip.js
 Stack Trace:
 #0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-12-10 02:44:44 Error: [MissingActionException] Action StatisticsController::statistics() could not be found.
+Exception Attributes: array (
+  'controller' => 'StatisticsController',
+  'action' => 'statistics',
+)
+Request URL: /YoutubeApp/statistics/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-10 02:45:07 Error: [MissingViewException] View file "/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp',
+)
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-10 02:50:10 Error: Fatal Error (1): Call to a member function isAjax() on a non-object in [/home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php, line 13]
+2013-12-10 02:50:10 Error: [FatalErrorException] Call to a member function isAjax() on a non-object
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/arek/HTML...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/arek/HTML...', 13, Array)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/arek/HTML...', 13, Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 02:51:30 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php, line 13]
+2013-12-10 02:51:30 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/arek/HTML...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/arek/HTML...', 13, Array)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/arek/HTML...', 13, Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 03:07:43 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [/home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php, line 15]
+Trace:
+json_decode - [internal], line ??
+StatisticsController::get_world_most_popular() - APP/Controller/StatisticsController.php, line 15
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2013-12-10 03:14:59 Error: [MissingViewException] View file "/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp',
+)
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/View/View.php(457): View->_getViewFileName('Unrelated/ajax')
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(952): View->render('Unrelated/ajax', NULL)
+#2 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(15): Controller->render('Unrelated/ajax')
+#3 [internal function]: StatisticsController->get_world_most_popular()
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#5 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-12-10 03:15:27 Error: [MissingViewException] View file "/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp',
+)
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/View/View.php(457): View->_getViewFileName('Unrelated/ajax')
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(952): View->render('Unrelated/ajax', NULL)
+#2 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(14): Controller->render('Unrelated/ajax')
+#3 [internal function]: StatisticsController->get_world_most_popular()
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#5 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-12-10 03:17:30 Error: [MissingViewException] View file "/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp',
+)
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/View/View.php(457): View->_getViewFileName('Unrelated/ajax')
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(952): View->render('Unrelated/ajax', NULL)
+#2 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(14): Controller->render('Unrelated/ajax')
+#3 [internal function]: StatisticsController->get_world_most_popular()
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#5 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-12-10 03:18:31 Error: [MissingViewException] View file "/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp',
+)
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/View/View.php(457): View->_getViewFileName('Unrelated/ajax')
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(952): View->render('Unrelated/ajax', NULL)
+#2 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(13): Controller->render('Unrelated/ajax')
+#3 [internal function]: StatisticsController->get_world_most_popular()
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#5 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-12-10 03:20:07 Error: [MissingViewException] View file "/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp',
+)
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-10 03:20:51 Error: [MissingViewException] View file "/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp',
+)
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/View/View.php(457): View->_getViewFileName('Unrelated/ajax')
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(952): View->render('Unrelated/ajax', NULL)
+#2 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(14): Controller->render('Unrelated/ajax')
+#3 [internal function]: StatisticsController->get_world_most_popular()
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#5 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-12-10 03:21:08 Error: [MissingViewException] View file "/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp',
+)
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/View/View.php(457): View->_getViewFileName('Unrelated/ajax')
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(952): View->render('Unrelated/ajax', NULL)
+#2 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(14): Controller->render('Unrelated/ajax')
+#3 [internal function]: StatisticsController->get_world_most_popular()
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#5 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-12-10 03:23:15 Error: [MissingViewException] View file "/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp',
+)
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/View/View.php(457): View->_getViewFileName('Unrelated/ajax')
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(952): View->render('Unrelated/ajax', NULL)
+#2 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(14): Controller->render('Unrelated/ajax')
+#3 [internal function]: StatisticsController->get_world_most_popular()
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#5 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-12-10 03:26:06 Error: [MissingViewException] View file "/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/arek/HTML/YoutubeApp/app/View/Statistics/Unrelated/ajax.ctp',
+)
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/View/View.php(457): View->_getViewFileName('Unrelated/ajax')
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(952): View->render('Unrelated/ajax', NULL)
+#2 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(14): Controller->render('Unrelated/ajax')
+#3 [internal function]: StatisticsController->get_world_most_popular()
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#5 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-12-10 03:49:16 Error: Fatal Error (1): Call to undefined method StatisticsController::getMostPopularVideos() in [/home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php, line 17]
+2013-12-10 03:49:16 Error: [InternalErrorException] Internal Server Error
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/arek/HTML...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/arek/HTML...', 17, Array)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/arek/HTML...', 17, Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 03:50:06 Error: Fatal Error (1): Call to undefined method StatisticsController::getMostPopularVideos() in [/home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php, line 17]
+2013-12-10 03:50:06 Error: [InternalErrorException] Internal Server Error
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/arek/HTML...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/arek/HTML...', 17, Array)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/arek/HTML...', 17, Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 03:52:41 Error: Fatal Error (1): Call to undefined method StatisticsController::getMostPopularVideos() in [/home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php, line 17]
+2013-12-10 03:52:41 Error: [InternalErrorException] Internal Server Error
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/arek/HTML...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/arek/HTML...', 17, Array)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/arek/HTML...', 17, Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 04:04:34 Error: Fatal Error (4): syntax error, unexpected ''aleczka";' (T_ENCAPSED_AND_WHITESPACE) in [/home/arek/HTML/YoutubeApp/app/Model/Statistic.php, line 14]
+2013-12-10 04:04:34 Error: [InternalErrorException] Internal Server Error
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/arek/HTML...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/arek/HTML...', 14, Array)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/arek/HTML...', 14, Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 04:04:57 Error: Fatal Error (4): syntax error, unexpected ''aleczka";' (T_ENCAPSED_AND_WHITESPACE) in [/home/arek/HTML/YoutubeApp/app/Model/Statistic.php, line 14]
+2013-12-10 04:04:57 Error: [InternalErrorException] Internal Server Error
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/arek/HTML...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/arek/HTML...', 14, Array)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/arek/HTML...', 14, Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 04:05:13 Error: Fatal Error (4): syntax error, unexpected ''aleczka";' (T_ENCAPSED_AND_WHITESPACE) in [/home/arek/HTML/YoutubeApp/app/Model/Statistic.php, line 14]
+2013-12-10 04:05:13 Error: [FatalErrorException] syntax error, unexpected ''aleczka";' (T_ENCAPSED_AND_WHITESPACE)
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/arek/HTML...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/arek/HTML...', 14, Array)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/arek/HTML...', 14, Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 04:05:47 Error: [Exception] Empty country code
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(18): Statistic->getMostPopularVideos('ca')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 04:06:53 Error: [Exception] Empty country code
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(18): Statistic->getMostPopularVideos('ca', 'small')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 04:07:50 Error: [Exception] Empty country code
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(18): Statistic->getMostPopularVideos('ca', 'small')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 04:08:19 Error: [Exception] Malformed data
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(18): Statistic->getMostPopularVideos('ca', 'small')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 04:08:36 Error: [Exception] Malformed data
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(18): Statistic->getMostPopularVideos('ca', 'small')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 04:19:40 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/home/arek/HTML/YoutubeApp/app/Vendor/redis/redis_for_abs.php, line 58]
+2013-12-10 04:19:40 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/home/arek/HTML...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/home/arek/HTML...', 58, Array)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/home/arek/HTML...', 58, Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 04:45:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/css/jmap/jquery.qtip.css
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 04:45:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/js/jmap/jquery.qtip.js
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 04:57:03 Error: [Exception] Malformed data
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(18): Statistic->getMostPopularVideos('cf', 'small')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 05:04:38 Error: [Exception] Malformed data
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(18): Statistic->getMostPopularVideos('py', 'small')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 05:35:26 Error: [Exception] Malformed data
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(18): Statistic->getMostPopularVideos('gl', 'small')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 06:00:57 Error: [Exception] Malformed data
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(17): Statistic->getMostPopularVideos('cn', 'small')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 07:35:53 Error: [Exception] Malformed data
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(17): Statistic->getMostPopularVideos('gl', 'small')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 07:35:56 Error: [Exception] Malformed data
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(17): Statistic->getMostPopularVideos('dz', 'small')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 07:36:00 Error: [Exception] Malformed data
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(17): Statistic->getMostPopularVideos('gl', 'small')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 07:36:43 Error: [Exception] Malformed data
+Request URL: /YoutubeApp/statistics/get_world_most_popular
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/Controller/StatisticsController.php(17): Statistic->getMostPopularVideos('gl', 'small')
+#1 [internal function]: StatisticsController->get_world_most_popular()
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StatisticsController), Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-12-10 08:04:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/css/images/controls.png
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 08:04:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/css/images/bx_loader.gif
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 08:05:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/css/images/controls.png
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 08:05:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/css/images/bx_loader.gif
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 08:06:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/css/images/bx_loader.gif
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 08:06:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/css/images/controls.png
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 08:08:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/css/images/bx_loader.gif
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 08:08:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/css/images/controls.png
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-11 23:28:21 Error: [Exception] DateTime::__construct() [<a href='http://php.net/datetime.construct'>datetime.construct</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone.
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Network/CakeResponse.php(1057): DateTime->__construct('2013-12-03 18:2...')
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Network/CakeResponse.php(961): CakeResponse->_getUTCDate(1386095020)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1386095020)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(140): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-12-11 23:28:21 Error: [Exception] DateTime::__construct() [<a href='http://php.net/datetime.construct'>datetime.construct</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone.
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Network/CakeResponse.php(1057): DateTime->__construct('2013-12-03 18:2...')
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Network/CakeResponse.php(961): CakeResponse->_getUTCDate(1386095020)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1386095020)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(140): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-12-11 23:28:22 Error: [Exception] DateTime::__construct() [<a href='http://php.net/datetime.construct'>datetime.construct</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone.
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Network/CakeResponse.php(1057): DateTime->__construct('2013-12-03 18:2...')
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Network/CakeResponse.php(961): CakeResponse->_getUTCDate(1386095020)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Filter/AssetDispatcher.php(62): CakeResponse->modified(1386095020)
+#3 [internal function]: AssetDispatcher->beforeDispatch(Object(CakeEvent))
+#4 /home/arek/HTML/YoutubeApp/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(140): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}

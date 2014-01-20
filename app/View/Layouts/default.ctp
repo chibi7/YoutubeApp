@@ -9,6 +9,7 @@
 
 		echo $this->Html->css('cake.generic');
 		echo $this->Html->css('layout/main');
+		echo $this->Html->css('hint');
 
 		echo $this->Html->script('jquery-2.0.3.min.js');
 

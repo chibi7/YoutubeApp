@@ -12,7 +12,6 @@ class RedisBase extends RedisBaseAbs {
 	
 	public function __call($name, $args) {
         $result = parent::__call($name,$args);
-        debug($result);
 		return $result;
 	}
 
