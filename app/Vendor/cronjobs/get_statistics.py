@@ -3,6 +3,7 @@ import requests
 import json
 import redis
 
+
 class Cron:
     def __init__(self, config_path):
         self._parse_config(config_path)
@@ -31,7 +32,6 @@ class Cron:
     def _get_redis_connection(self):
         try:
             self.redis_connection = redis.StrictRedis(host=self.redis["host"], port=int(self.redis["port"]), db=int(self.redis["most_popular"]))
-            self.redis_connection.set(1, 'bb')
         except Exception as e:
             print "Problem with REDIS connection: {0}".format(e)
 
