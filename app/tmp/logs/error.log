@@ -1259,3 +1259,218 @@ Stack Trace:
 #1 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
 #2 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-01-21 05:34:41 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:34:41 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:34:41 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:34:41 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:34:52 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:34:52 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:34:52 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:34:52 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:34:53 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:34:53 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:34:53 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:34:53 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:43:17 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:43:17 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:43:17 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 05:43:17 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/arek/HTML/YoutubeApp/app/View/Statistics/get_world_most_popular.ctp, line 24]
+Trace:
+include - APP/View/Statistics/get_world_most_popular.ctp, line 24
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2014-01-21 06:05:06 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/img/statistics/arrow_left.png
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 06:05:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /YoutubeApp/img/statistics/arrow_right.png
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 06:10:53 Error: [MissingActionException] Action StatisticsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'StatisticsController',
+  'action' => 'index',
+)
+Request URL: /YoutubeApp/statistics/
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/arek/HTML/YoutubeApp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(StatisticsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/arek/HTML/YoutubeApp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 06:21:38 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO), expecting ':' in [/home/arek/HTML/YoutubeApp/app/View/Elements/video.ctp, line 9]
+2014-01-21 06:21:38 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO), expecting ':'
+Request URL: /YoutubeApp/statistics/get_search_result
+Stack Trace:
+#0 /home/arek/HTML/YoutubeApp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/arek/HTML...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/arek/HTML...', 9, Array)
+#2 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/arek/HTML...', 9, Array)
+#3 /home/arek/HTML/YoutubeApp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

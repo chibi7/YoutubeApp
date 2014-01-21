@@ -1,22 +1,27 @@
 #searchResultContainer #slider-code { height: 500px; overflow:hidden;}
 #searchResultContainer #slider-code .viewport { float: left; width: 800px; height: 500px; overflow: hidden; position: relative;}
-#searchResultContainer #slider-code .buttons { display: block; margin: 30px 10px 0 0; float: left; }
-#searchResultContainer #slider-code .next { margin: 30px 0 0 10px;  }
+#searchResultContainer #slider-code .buttons { display: block; margin: 150px 10px 0 0; float: left; }
+#searchResultContainer #slider-code .next { margin: 150px 0 0 10px;  }
 #searchResultContainer #slider-code .disable { visibility: hidden; }
 #searchResultContainer #slider-code .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; }
-#searchResultContainer #slider-code .overview li{ float: left; margin: 0 20px 0 0; padding: 1px; height: 121px; width: 800px;}
-#searchResultContainer #slider-code .buttons.next { background: url('../../img/statistics/next.png') no-repeat; width: 24px; height: 24px;}
-#searchResultContainer #slider-code .buttons.prev { background: url('../../img/statistics/prev.png') no-repeat; width: 24px; height: 24px;}
+#searchResultContainer #slider-code .overview li{ float: left; margin: 0 20px 0 0; padding: 1px; height: 500px; width: 800px;}
+#searchResultContainer #slider-code .buttons.next { background: url('../../img/statistics/arrows_right.png') no-repeat; width: 96px; height: 186px;}
+#searchResultContainer #slider-code .buttons.prev { background: url('../../img/statistics/arrows_left.png') no-repeat; width: 89px; height: 185px;}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
 
 #searchResultContainer {
-	width: 900px;
+	width: 1050px;
 	height: 550px;
 	margin: 30px auto 0;
 }
 
 .video {
 	width: 800px;
-	height: 500px;
+	min-height: 500px;
 	background: rgba(0, 0, 0, 0.4);
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
@@ -39,6 +44,11 @@
 	font-size: 20px;
 }
 
+.author {
+	color: #B5B5B5;
+	margin: 10px 0 0 21px;
+}
+
 .leftSide {
 	width: 480px;
 	height: 360px;
@@ -46,8 +56,92 @@
 	margin: 30px 0 0 20px;
 }
 
+.duration {
+	text-align: right;
+	color: #B5B5B5;
+}
+
 .rightSide {
 	float: left;
-	width: 100px;
-	height: 100px;
+	width: 300px;
+	height: 420px;
+	margin: 30px 0 0 0px;
+}
+
+.description {
+	width: 250px;
+	min-height: 100px;
+	background: rgba(189, 185, 185, 0.1);
+	border-radius: 10px;
+	margin: 0 auto;
+	color: white;
+	padding: 5px;
+}
+
+.columnWrapper {
+	width: 250px;
+	margin: 30px auto 0;
+	color: #B5B5B5;;
+}
+
+.leftColumn {
+	float: left;
+	width: 125px;
+}
+
+.rightColumn {
+	float: left;
+	width: 125px;
+}
+
+.likeIcon {
+	width: 32px;
+	height: 32px;
+	background: url('../../img/statistics/like.png') no-repeat;
+	display: inline-block;
+}
+
+.dislikeIcon {
+	width: 32px;
+	height: 32px;
+	background: url('../../img/statistics/dislike.png') no-repeat;
+	display: inline-block;
+}
+
+.viewCountIcon {
+	width: 24px;
+	height: 24px;
+	background: url('../../img/statistics/view.png') no-repeat;
+	display: inline-block;
+}
+
+.favoriteCountIcon {
+	width: 24px;
+	height: 24px;
+	background: url('../../img/statistics/heart.png') no-repeat;
+	display: inline-block;
+}
+
+.ratingIcon {
+	width: 24px;
+	height: 24px;
+	background: url('../../img/statistics/star.png') no-repeat;
+	display: inline-block;
+}
+
+.commentsIcon {
+	width: 24px;
+	height: 24px;
+	background: url('../../img/statistics/comment.png') no-repeat;
+	display: inline-block;
+}
+
+.item {
+	margin-bottom: 20px;
+}
+
+.item>span {
+	position: relative;
+	top: -7px;
+	left: 6px;
 }

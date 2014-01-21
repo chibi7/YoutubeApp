@@ -26,5 +26,3 @@ if($videoList === null) {
 	    <a class="buttons next" href="#"></a>
 	</div>
 </div>
-
-<?php debug($videoList[0]); ?>
