@@ -28,7 +28,7 @@ class StatisticsController extends AppController {
 	public function search_videos() {
 		$this->loadModel('Statistic');
 		$this->set("categories", $this->Statistic->parseCategoryXml());
-		$this->set("region", array_flip($this->globalConfig['COUNTRIES']));
+		$this->set("region", $this->Statistic->getRegion());
 		$this->set("language", $this->Statistic->getLanguages());
 	}
 
@@ -39,8 +39,8 @@ class StatisticsController extends AppController {
 	        );
 		}
 		$this->loadModel('Statistic');
-		$video = $this->Statistic->getVideoData($this->data);
-		debug($video);
+		$videoList = $this->Statistic->getVideoData($this->data);
+		$this->set("videoList", $videoList);
 	}
 
 

@@ -19,11 +19,11 @@ abstract class RedisBaseAbs {
 	 */
 	public function __construct(array $config = array ()) {
 		
-		$redisConnTimeout = 0.1;
+		$redisConnTimeout = 10;
 		if(!is_null(Configure::read('Redis.conn_timeout')) && is_numeric(Configure::read('Redis.conn_timeout'))){
 			$redisConnTimeout = Configure::read('Redis.conn_timeout');
 		}
-
+		
 		$connStart = microtime(true);
 		$this->connection = @ fsockopen($config['hostname'], $config['port'], $errno, $errstr, $redisConnTimeout);
 		
@@ -122,7 +122,7 @@ abstract class RedisBaseAbs {
 			throw new RedisBaseException('You must be connected to a Redis server to send a command.', $this->config);
 		}
 
-		$reply = trim(fgets($this->connection, 512));
+		$reply = trim(fgets($this->connection));
 
 		switch (substr($reply, 0, 1)) {
 			case RedisBaseAbs :: ERROR :
@@ -148,7 +148,7 @@ abstract class RedisBaseAbs {
 
 				$response = array ();
 				for ($i = 0; $i < $count; $i++) {
-					$bulk_head = trim(fgets($this->connection, 512));
+					$bulk_head = trim(fgets($this->connection));
 					$response[] = $this->readBulkReply($bulk_head);
 				}
 				break;
@@ -183,10 +183,10 @@ abstract class RedisBaseAbs {
 
 		$response = null;
 		$size = (int)substr($reply, 1);
-		
+
 		if($size >= 0) {
 			if($size > 0) {
-				$response = fread($this->connection, $size);
+				$response = stream_get_contents($this->connection);
 			}
 
 			// Get rid of the CRLF at the end

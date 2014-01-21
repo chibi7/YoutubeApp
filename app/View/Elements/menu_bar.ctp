@@ -12,7 +12,4 @@
 	<li><?php
 		echo $this->Html->link('Search Videos', '/statistics/search_videos', array());
 	?></li>
-	<li><?php
-		echo $this->Html->link('Statistics', '/statistics/search_videos', array());
-	?></li>
 </ul>

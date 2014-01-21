@@ -23,7 +23,8 @@ class Statistic extends AppModel {
 	}
 
 	public function parseCategoryXml() {
-		return array(
+		$category = array(
+			"---",
 			"Film",
 			"Autos",
 			"Music",
@@ -57,6 +58,7 @@ class Statistic extends AppModel {
 			"Shows",
 			"Trailers"
 		);
+		return array_combine($category, $category);
 	}
 
 	public function getLanguages() {
@@ -66,18 +68,24 @@ class Statistic extends AppModel {
 	  		$line[1] = trim($line[1]);
 	  		$language[$line[1]] = $line[0];
 	  	}
+	  	array_unshift($language, "---");
 	  	return $language;
 
 	}
 
-	public function getVideoData($data) {
-		if(isset($data['q']) && empty($data['q'])) {
-			unset($data['q']);
-		}
+	public function getRegion() {
+		$region = array_flip($this->globalConfig['COUNTRIES']);
+		array_unshift($region, "---");
+	  	return $region;
+	}
 
-		if(isset($data['author']) && empty($data['author'])) {
-			unset($data['author']);
+	public function getVideoData($data) {
+		foreach($data as $key => &$value) {
+			if(empty($value) || $value == "---") {
+				unset($data[$key]);
+			}
 		}
+		unset($value);
 
 		$data = json_encode($data);
 		$data = str_replace("\"", "'", $data);
@@ -85,17 +93,10 @@ class Statistic extends AppModel {
 		
 		$video = $this->getVideo($key);
 		if($video == null) {
-			// debug("heheszki");
 			$command = sprintf("%s../env/bin/python %sVendor/cronjobs/find_video.py -c\"%s\" -k%s ", APP, APP, $data, $key);
 			$output = shell_exec($command);
-			// debug($command);
 			$video = $this->getVideo($key);
 		}
-		// debug($video);
-		// var_dump($video);
-		// $fp = fopen(WWW_ROOT.'data.txt', 'w+');
-		// fwrite($fp, $video);
-		// fclose($fp);
 		return json_decode($video, true);
 	}
 

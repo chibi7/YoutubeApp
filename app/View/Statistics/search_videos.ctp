@@ -20,7 +20,7 @@
 				<?php echo $this->element("search_text_field", array(
 					'placeholder' => 'Keyword', 
 					"id" => "searchKeyword",
-					"name" => "keyword"
+					"name" => "q"
 				)); ?>
 				</div>
 				<div class="help hint--right hint--info hint--rounded hint--width" data-hint="The keyword parameter specifies a search query term. YouTube will search all video metadata for videos matching the term. Video metadata includes titles, keywords, descriptions, authors' usernames, and categories.">?</div>
@@ -33,6 +33,7 @@
 			<div class="optionWrapper" style="width: 520px; margin-left: 30px;">
 				<div class="elementWrapper" style="width: 500px;">
 				<?php echo $this->element("search_text_field", array(
+					"0" => "---",
 					'placeholder' => 'Author',
 					 "id" => "searchAuthor",
 					 "name" => "author"
@@ -48,7 +49,7 @@
 			<div class="optionWrapper">
 				<div class="optionLabel">Category</div>
 				<div class="elementWrapper">
-				<?php echo $this->element("easydropdown", array('options' => $categories, "name" => "q")); ?>
+				<?php echo $this->element("easydropdown", array('options' => $categories, "name" => "category")); ?>
 				</div>
 				<div class="help hint--right hint--info hint--rounded hint--width" data-hint="In video search requests, it enables you to retrieve videos that are in a particular category or are tagged with a particular keyword or developer tag.">?</div>
 				<div class="clearfix"></div>
@@ -85,6 +86,7 @@
 				<div class="optionLabel">Time</div>
 				<div class="elementWrapper">
 				<?php echo $this->element("easydropdown", array('options' => array(
+					"0" => "---",
 					"today" => "today",
 					"this_week" => "this week",
 					"this_month" => "this month",
@@ -102,6 +104,7 @@
 				<div class="optionLabel">Duration</div>
 				<div class="elementWrapper">
 				<?php echo $this->element("easydropdown", array('options' => array(
+					"0" => "---",
 					"short" => "short",
 					"medium" => "medium",
 					"long" => "long"
@@ -142,6 +145,7 @@
 				<div class="optionLabel">Order by</div>
 				<div class="elementWrapper">
 				<?php echo $this->element("easydropdown", array('options' => array(
+					"0" => "---",
 					"relevance" => "relevance",
 					"published" => "published",
 					"viewCount" => "viewCount",
@@ -171,7 +175,7 @@
 		</div>
 
 		<div class="option">
-			<input type="submit" value="Search" id="bigbutton" />
+			<input style="margin-left: 50px;" type="submit" value="Search" id="bigbutton" />
 		</div>
 
 	</form>
