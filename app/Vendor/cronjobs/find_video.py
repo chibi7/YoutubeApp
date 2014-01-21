@@ -75,18 +75,18 @@ class Cron():
         result['updated'] = row['updated']['$t']
         result['author'] = row['author'][0]['name']['$t']
         result['title'] = row['title']['$t']
-        result['gd$rating'] = row.get('gd$rating', default_value)
-        result['yt$statistics'] = row.get('yt$statistics', default_value)
+        result['gd_rating'] = row.get('gd_rating', default_value)
+        result['yt_statistics'] = row.get('yt$statistics', default_value)
         result['published'] = row['published']['$t']
-        result['yt$rating'] = row.get('yt$rating', default_value)
-        result['gd$comments'] = row.get('gd$comments', default_value)
+        result['yt_rating'] = row.get('yt$rating', default_value)
+        result['gd_comments'] = row.get('gd$comments', default_value)
         media_group = row.get('media$group', default_value)
         if media_group != default_value:
-            result['media$group'] = {}
-            result['media$group']['yt$videoid'] = media_group['yt$videoid']['$t']
-            result['media$group']['yt$duration'] = media_group['yt$duration']['seconds']
-            result['media$group']['media$thumbnail'] = media_group.get('media$thumbnail', default_value)
-            result['media$group']['media$description'] = media_group.get('media$description', default_value)
+            result['media_group'] = {}
+            result['media_group']['yt_videoid'] = media_group['yt$videoid']['$t']
+            result['media_group']['yt_duration'] = media_group['yt$duration']['seconds']
+            result['media_group']['media_thumbnail'] = media_group.get('media$thumbnail', default_value)
+            result['media_group']['media_description'] = media_group.get('media$description', default_value)
         return result
 
     def _get_redis_connection(self):
