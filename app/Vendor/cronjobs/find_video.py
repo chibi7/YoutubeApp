@@ -41,7 +41,7 @@ class Cron():
         try:
             for keyword, option in ast.literal_eval(self._options.conditions).items():
                 url += "&{0}={1}".format(keyword, option)
-                return url
+            return url
         except SyntaxError:
             print "Bad json format"
             sys.exit()
