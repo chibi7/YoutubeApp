@@ -65,7 +65,28 @@ class Cron():
     def _parse_response(self, data):
         result = []
         for item in data:
-            result.append(item)
+            result.append(self._parse_row(item))
+        return result
+
+    def _parse_row(self, row):
+        default_value = "No data"
+        result = {}
+        result['category'] = row['category'][1]['term']
+        result['updated'] = row['updated']['$t']
+        result['author'] = row['author'][0]['name']['$t']
+        result['title'] = row['title']['$t']
+        result['gd$rating'] = row.get('gd$rating', default_value)
+        result['yt$statistics'] = row.get('yt$statistics', default_value)
+        result['published'] = row['published']['$t']
+        result['yt$rating'] = row.get('yt$rating', default_value)
+        result['gd$comments'] = row.get('gd$comments', default_value)
+        media_group = row.get('media$group', default_value)
+        if media_group != default_value:
+            result['media$group'] = {}
+            result['media$group']['yt$videoid'] = media_group['yt$videoid']['$t']
+            result['media$group']['yt$duration'] = media_group['yt$duration']['seconds']
+            result['media$group']['media$thumbnail'] = media_group.get('media$thumbnail', default_value)
+            result['media$group']['media$description'] = media_group.get('media$description', default_value)
         return result
 
     def _get_redis_connection(self):
