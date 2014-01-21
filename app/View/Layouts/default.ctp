@@ -21,6 +21,7 @@
 <body>
 	<div id="container">
 		<header class="lightStrip">
+			<?php echo $this->element('menu_bar'); ?>
 		</header>
 
 		<div id="content">

@@ -12,13 +12,13 @@
 
 	<div id="itemFirstCol">
 		<div class="itemStatistic">
-			<div id="viewContainer">
+			<div class="viewContainer">
 				<div class="itemImage viewIcon"></div><span><?php echo $video['viewCount']; ?></span>
 			</div>
 		</div>
 
 		<div class="itemStatistic">
-			<div id="commentContainer">
+			<div class="commentContainer">
 				<div class="itemImage commentIcon"></div><span><?php echo $video['commentCount']; ?></span>
 			</div>
 		</div>
@@ -26,13 +26,13 @@
 
 	<div id="itemSecondCol">
 		<div class="itemStatistic">
-			<div id="ratingContainer">
+			<div class="ratingContainer">
 				<div class="itemImage ratingIcon"></div><span><?php echo $video['ratingCount']; ?></span>
 			</div>
 		</div>
 
 		<div class="itemStatistic">
-			<div id="likeContainer">
+			<div class="likeContainer">
 				<div class="itemImage likeIcon"></div><span><?php echo $video['likeCount']; ?></span>
 			</div>
 		</div>

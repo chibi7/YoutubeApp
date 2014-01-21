@@ -66,6 +66,17 @@
     white-space: nowrap;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); }
 
+.hint--width.hint--right:before {
+    margin-left: -212px;
+    margin-bottom: -6px;
+}
+
+.hint--width.hint--right:before, .hint--width.hint--right:after {
+  width: 200px;
+  white-space: normal;
+  line-height: 15px;
+}
+
 /**
  * source: hint-position.scss
  *

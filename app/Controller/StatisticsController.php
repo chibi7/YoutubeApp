@@ -25,4 +25,23 @@ class StatisticsController extends AppController {
 		
 	}
 
+	public function search_videos() {
+		$this->loadModel('Statistic');
+		$this->set("categories", $this->Statistic->parseCategoryXml());
+		$this->set("region", array_flip($this->globalConfig['COUNTRIES']));
+		$this->set("language", $this->Statistic->getLanguages());
+	}
+
+	public function get_search_result() {
+		if(empty($this->data)) {
+			return $this->redirect(
+	            array('controller' => 'statistics', 'action' => 'search_videos')
+	        );
+		}
+		$this->loadModel('Statistic');
+		$video = $this->Statistic->getVideoData($this->data);
+		debug($video);
+	}
+
+
 }

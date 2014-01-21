@@ -25,7 +25,6 @@ $(document).ready(function() {
 	      }
 	    },
 	    onRegionClick: function(event, code) {
-	    	// console.log('regionClick '+code);
 	    	if(code == clickedCode && globalIsSelected == true) {
 	    		globalIsSelected = false;
 	    		var mapObject = $("#map").vectorMap('get', 'mapObject');
@@ -39,7 +38,7 @@ $(document).ready(function() {
 	    	
 	    },
 	    onRegionSelected: function(event, code, isSelected, selectedRegions) {
-	    	// console.log('regionSelected '+code+" "+isSelected);
+	    	console.log('regionSelected '+code+" "+isSelected);
 	    	if(isSelected) {
 	    		if(sendedCode != code) {
 	    			sendRequest(code);
@@ -66,6 +65,7 @@ $(document).ready(function() {
 		hide: false,
 		events: {
             show: function(event) {
+            	// event.preventDefault();
                 $('#map').qtip('option', 'position.target', [xPosition, yPosition]);
             }
         }
@@ -103,11 +103,11 @@ function sendRequest(code) {
 }
 
 function createHint() {
-	$("#viewContainer").addClass('hint--top  hint--info').attr('data-hint', 'Total views');
+	$(".viewContainer").addClass('hint--top  hint--info').attr('data-hint', 'Total views');
 
-	$("#commentContainer").addClass('hint--top  hint--info').attr('data-hint', 'Total comments');
+	$(".commentContainer").addClass('hint--top  hint--info').attr('data-hint', 'Total comments');
 
-	$("#ratingContainer").addClass('hint--top  hint--info').attr('data-hint', 'Official rating')
+	$(".ratingContainer").addClass('hint--top  hint--info').attr('data-hint', 'Official rating')
 
-	$("#likeContainer").addClass('hint--top  hint--info').attr('data-hint', 'Users likes');
+	$(".likeContainer").addClass('hint--top  hint--info').attr('data-hint', 'Users likes');
 }

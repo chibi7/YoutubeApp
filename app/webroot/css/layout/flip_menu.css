@@ -1,0 +1,22 @@
+ul#flip_nav {
+	display: inline-block;
+	margin-left: 100px;
+}
+
+ul#flip_nav li a {
+	color: white;
+	text-decoration: none;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+	font-size: 21px;
+}
+
+ul#flip_nav li {
+	float: left;
+	text-align: center;
+	margin: 0px 20px 0px 0px;
+}
+
+ul#flip_nav a.flipped_item {
+	/*background-color: #000000;*/
+	color: #ffffff;
+}

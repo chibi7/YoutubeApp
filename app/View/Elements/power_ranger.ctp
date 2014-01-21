@@ -1,0 +1,1 @@
+<input class="powerRanger" name="<?php echo $name; ?>" type="number" value="<?php echo $current; ?>" min="<?php echo $min; ?>" max="<?php echo $max; ?>">

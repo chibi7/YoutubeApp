@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app:categories xmlns:app="http://www.w3.org/2007/app" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:yt="http://gdata.youtube.com/schemas/2007" fixed="yes" scheme="http://gdata.youtube.com/schemas/2007/categories.cat">
+   <atom:category term="Film" label="Film i animacja" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Autos" label="Motoryzacja" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Music" label="Muzyka" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Animals" label="Zwierzęta" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Sports" label="Sport" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Shortmov" label="Krótkie filmy" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Travel" label="Podróże i wydarzenia" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Games" label="Gry" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Videoblog" label="Blogi wideo" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="People" label="Ludzie i blogi" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Comedy" label="Śmieszne" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Entertainment" label="Rozrywka" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="News" label="Wiadomości i polityka" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Howto" label="Poradniki i styl" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Education" label="Edukacja" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Tech" label="Nauka i technika" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="AE AR AT AU BE BH BR CA CH CL CO CZ DE DK DZ EG ES FI FR GB GH GR HK HU ID IE IL IN IT JO JP KE KR KW MA MX MY NG NL NO NZ OM PE PH PL PT QA RO RU SA SE SG SK SN TN TR TW UA UG US YE ZA" />
+   </atom:category>
+   <atom:category term="Nonprofit" label="Społeczne i non-profit" xml:lang="pl-PL">
+      <yt:assignable />
+      <yt:browsable regions="US" />
+   </atom:category>
+   <atom:category term="Movies" label="Filmy" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Movies_anime_animation" label="Anime/animacja" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Movies_action_adventure" label="Akcja/przygoda" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Movies_classics" label="Klasyka" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Movies_comedy" label="Śmieszne" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Movies_documentary" label="Dokumentalny" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Movies_drama" label="Dramat" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Movies_family" label="Familijne" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Movies_foreign" label="Zagraniczne" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Movies_horror" label="Horror" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Movies_sci_fi_fantasy" label="Fantastyka/fantasy" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Movies_thriller" label="Sensacyjny" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Movies_shorts" label="Krótkometrażowe" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Shows" label="Programy" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+   <atom:category term="Trailers" label="Zwiastuny" xml:lang="pl-PL">
+      <yt:deprecated />
+   </atom:category>
+</app:categories>
