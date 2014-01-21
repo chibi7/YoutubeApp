@@ -34,7 +34,7 @@
   font-weight: 500;
 }
 .toggle-light .toggle-slide .toggle-on, .toggle-light .toggle-select .toggle-inner .active {
-  background: rgb(69,163,31);
+  background: #00c384;
   box-shadow: inset 2px 2px 6px rgba(0,0,0,0.2);
   text-shadow: 1px 1px rgba(0,0,0,0.2);
   color: rgba(255,255,255, 0.8);
