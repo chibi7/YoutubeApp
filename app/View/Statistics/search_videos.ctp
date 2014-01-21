@@ -171,7 +171,7 @@
 		</div>
 
 		<div class="option">
-			<input type="submit" value="Search" />
+			<input type="submit" value="Search" id="bigbutton" />
 		</div>
 
 	</form>
